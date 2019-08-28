@@ -6371,6 +6371,11 @@ normalize-url@^4.1.0:
   resolved "https://registry.npm.taobao.org/normalize-url/download/normalize-url-4.3.0.tgz#9c49e10fc1876aeb76dba88bf1b2b5d9fa57b2ee"
   integrity sha1-nEnhD8GHaut226iL8bK12fpXsu4=
 
+normalize.css@^8.0.1:
+  version "8.0.1"
+  resolved "https://registry.npm.taobao.org/normalize.css/download/normalize.css-8.0.1.tgz#9b98a208738b9cc2634caacbc42d131c97487bf3"
+  integrity sha1-m5iiCHOLnMJjTKrLxC0THJdIe/M=
+
 npm-bundled@^1.0.1:
   version "1.0.6"
   resolved "https://registry.npm.taobao.org/npm-bundled/download/npm-bundled-1.0.6.tgz#e7ba9aadcef962bb61248f91721cd932b3fe6bdd"
@@ -8216,6 +8221,14 @@ shell-quote@^1.6.1:
   version "1.7.1"
   resolved "https://registry.npm.taobao.org/shell-quote/download/shell-quote-1.7.1.tgz?cache=0&sync_timestamp=1565703322893&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fshell-quote%2Fdownload%2Fshell-quote-1.7.1.tgz#3161d969886fb14f9140c65245a5dd19b6f0b06b"
   integrity sha1-MWHZaYhvsU+RQMZSRaXdGbbwsGs=
+
+shortcut-capture@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.npm.taobao.org/shortcut-capture/download/shortcut-capture-1.2.1.tgz#b397e7eb5271450d8f7579f921df9f547d74051f"
+  integrity sha1-s5fn61JxRQ2PdXn5Id+fVH10BR8=
+  dependencies:
+    normalize.css "^8.0.1"
+    vue "^2.6.10"
 
 signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"

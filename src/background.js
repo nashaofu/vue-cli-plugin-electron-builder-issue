@@ -1,10 +1,22 @@
 'use strict'
 
-import { app, protocol, BrowserWindow } from 'electron'
+import { app, protocol, BrowserWindow, globalShortcut } from 'electron'
 import {
   createProtocol,
   installVueDevtools
 } from 'vue-cli-plugin-electron-builder/lib'
+
+import ShortcutCapture from 'shortcut-capture'
+
+app.on('ready', () => {
+  // 必须在ready之后初始化，否者会报错
+  const shortcutCapture = new ShortcutCapture()
+  globalShortcut.register('ctrl+alt+a', () => shortcutCapture.shortcutCapture())
+  console.log(shortcutCapture)
+  // 拿取截图后返回信息
+  shortcutCapture.on('capture', ({ dataURL, bounds }) => console.log(dataURL, bounds))
+})
+
 const isDevelopment = process.env.NODE_ENV !== 'production'
 
 // Keep a global reference of the window object, if you don't, the window will
